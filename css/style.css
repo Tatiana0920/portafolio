@@ -1,0 +1,146 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+div.container-fluid{
+      background: rgba(28, 46, 209, 0);
+      /* Lo siguiente es para que la barra de navegacion se mueva de acorde a como bajemos,  si quiere que quede fija solo borre lo que esta despues del comentario :)  */
+      position: fixed;
+      width: 100%;
+      z-index: 999;
+      padding: 20px;
+      top: 20px;
+  }
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #fff;
+}
+
+.navbar-brand{
+    color: #fff;
+}
+
+.navbar {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-nav .nav-link.active {
+    color: white;
+    text-align: left;
+}
+
+#hero{position: relative;
+    width: 100%;
+    justify-content: space-between;
+    height: 100vh;
+    background: url(../img/bg-hero.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 70px 10% 0;
+}
+
+#hero h1 {
+    margin: 0 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #fff;
+    position: relative;
+    padding-left: 200px;
+}
+
+#hero h2 {
+    margin: 0 0 10px 0;
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 56px;
+    text-transform: uppercase;
+    color: #ffffff04;
+    -webkit-text-stroke: 1px white;
+    position: absolute;
+    left: 0;
+    right: 300px;
+    top: 80px;
+    padding-left: 200px;
+}
+  
+#hero p {
+    color: #fff;
+    margin-bottom: 30px;
+    font-size: 24px;
+    padding-left: 200px;
+    margin-top: 30px;
+}
+
+#hero .btn {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    padding: 5px 15px;
+    transition: 0.5s;
+    border: 2px solid #fff;
+    color: #fff;
+    margin-left: 200px;
+  }
+  
+  #hero .btn:hover {
+    background: #000;
+    border-color: #000;
+  }
+
+  section {
+    padding: 60px 0;
+    overflow: hidden;
+  }
+
+  section h2 {
+    text-align: center;
+    position: relative;
+  }
+
+.redes a{
+    display: inline-flex;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #0ef;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #0ef;
+    text-decoration: none;
+    margin: 30px 15px 30px 0;
+}
+
+.redes a:hover{
+    background: #0ef;
+    color: #0a0829;
+    box-shadow: 0 0 20px #0ef;
+}
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
