@@ -5,7 +5,6 @@ html {
 
 div.container-fluid{
       background: rgba(28, 46, 209, 0);
-      /* Lo siguiente es para que la barra de navegacion se mueva de acorde a como bajemos,  si quiere que quede fija solo borre lo que esta despues del comentario :)  */
       position: fixed;
       width: 100%;
       z-index: 999;
