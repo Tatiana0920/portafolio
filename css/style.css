@@ -1,28 +1,32 @@
-
-html {
-    scroll-behavior: smooth;
-}
-
-div.container-fluid{
-      background: rgba(28, 46, 209, 0);
-      position: fixed;
-      width: 100%;
-      z-index: 999;
-      padding: 20px;
-      top: 20px;
-  }
-
-body {
+*{
     margin: 0;
     padding: 0;
 }
 
-.nav-link {
-    color: #fff;
+body {
+    color: #ededed;
+    background: #000;
 }
 
-.navbar-brand{
-    color: #fff;
+/* html {
+    scroll-behavior: smooth;
+} */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+#header .container-fluid{
+    background: #000;
 }
 
 .navbar {
@@ -30,12 +34,22 @@ body {
     padding: 0;
 }
 
-.navbar-nav .nav-link.active {
-    color: white;
-    text-align: left;
+.navbar-nav a {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
 }
 
-#hero{position: relative;
+.navbar-nav a:hover {
+    color: #0004ff;
+}
+
+#hero{
+    position: relative;
     width: 100%;
     justify-content: space-between;
     height: 100vh;
@@ -47,18 +61,23 @@ body {
     padding: 70px 10% 0;
 }
 
-#hero h1 {
-    margin: 0 0 10px 0;
-    font-size: 70px;
-    font-weight: 700;
-    line-height: 56px;
-    text-transform: uppercase;
-    color: #fff;
-    position: relative;
-    padding-left: 200px;
+.container-hero {
+    max-width: 600px;
 }
 
-#hero h2 {
+.container-hero h3 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.container-hero h1 {
+    font-size: 56px;
+    font-weight: 700;
+    margin: -3px 0;
+    text-transform: uppercase;
+}
+
+.container-hero h2 {
     margin: 0 0 10px 0;
     font-size: 70px;
     font-weight: 700;
@@ -70,72 +89,154 @@ body {
     left: 0;
     right: 300px;
     top: 80px;
-    padding-left: 200px;
+    padding-left: 180px;
+    visibility: hidden;
 }
-  
-#hero p {
-    color: #fff;
-    margin-bottom: 30px;
-    font-size: 24px;
-    padding-left: 200px;
-    margin-top: 30px;
+
+.container-hero p {
+    font-size: 20px;
 }
 
 #hero .btn {
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 0.5px;
     display: inline-block;
-    padding: 5px 15px;
+    padding: 12px 28px;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 0.5px;
     transition: 0.5s;
     border: 2px solid #fff;
     color: #fff;
-    margin-left: 200px;
+    border-radius: 10px;
   }
   
   #hero .btn:hover {
-    background: #000;
-    border-color: #000;
-  }
-
-  section {
-    padding: 60px 0;
-    overflow: hidden;
-  }
-
-  section h2 {
-    text-align: center;
-    position: relative;
+    background: #0004ff;
+    border-color: #0004ff;
+    box-shadow: 0 0 20px #0004ff;
   }
 
 .redes a{
     display: inline-flex;
     justify-content: center;
+    align-items: center;
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 2px solid #fff;
     border-radius: 50%;
     font-size: 20px;
-    color: #0ef;
+    color: #fff;
     text-decoration: none;
     margin: 30px 15px 30px 0;
 }
 
 .redes a:hover{
-    background: #0ef;
-    color: #0a0829;
-    box-shadow: 0 0 20px #0ef;
+    background: #9900ff;
+    color: #fff;
+    box-shadow: 0 0 20px #9900ff;
+    border-color: #9900ff;
 }
 
+#hero .redes {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    left: 2%;
+    top: 30%;
+}
 
+#education h2{
+    text-align: center;
+}
+.accordion {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
+#projects{
+    background: #fff;
+    color: #292c36;
+    text-align: center;
+    padding-bottom: 80px;
+}
 
+#projects h2{
+    padding: 60px;
+}
 
+#experience {
+    width: 100%;
+    position: relative;
+    padding: 40px 0;
+    text-align: center;
+}
 
+#experience .row {
+    padding-top: 50px;
+}
 
+#experience .item-experiencia{
+    background-color: #c6c6c6;
+    border-radius: 4px;
+    position: relative;
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
 
+#experience .item-experiencia a .icon {
+    width: 50px;
+    padding: 15px;
+    border-radius: 4px;
+    position: absolute;
+    top: -20px;
+    left: 150px;
+}
 
+#experience h3 {
+    color: #292c36;
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 30px;
+}
+
+#experience p {
+    font-size: 18px;
+    line-height: 30px;
+    color: #292c36;
+    padding-bottom: 20px;
+}
+
+#experience i{
+    color: #0004ff;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#experience img{
+    display: none;
+}
+
+#experience a{
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    background: transparent;
+    border: 2px solid #fff;
+}
+
+#experience a:hover{
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+    background: #0004ff;
+    box-shadow: 0 0 20px #0004ff;
+    border-color: #0004ff;
+}
 
 footer{
     background-color: #000;
