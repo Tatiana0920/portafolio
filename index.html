@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tatiana Saavedra</title>
+    <link rel="icon" href="img/codigo.png" type="image/png">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <link href="css/style.css" rel="stylesheet">
@@ -12,18 +13,17 @@
     <header id="header">
           <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
-              <a class="navbar-brand" href="#hero">Tatiana</a>
+              <a class="navbar-brand" href="#hero"><img src="img/codigo.png" alt="logo"></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
-                  <a class="nav-link active" aria-current="page" href="#hero">Home</a>
-                  <a class="nav-link" href="#about">About me</a>
-                  <a class="nav-link" href="#about">Skills</a>
-                  <a class="nav-link" href="#education">Education</a>
-                  <a class="nav-link" href="#projects">Projects</a>
-                  <a class="nav-link" href="#experience">Experience</a>
+                  <a class="nav-link scrollto" href="#about">About me</a>
+                  <a class="nav-link scrollto" href="#about">Skills</a>
+                  <a class="nav-link scrollto" href="#education">Education</a>
+                  <a class="nav-link scrollto" href="#projects">Projects</a>
+                  <a class="nav-link scrollto" href="#experience">Experience</a>
                 </div>
               </div>
             </div>
@@ -31,97 +31,134 @@
           </nav>
     </header>
 
-    <section id="hero" class="d-flex align-items-center">
-      <div class="container-hero position-relative">
-        <p>Hello, I am</p>
+    <section id="hero">
+      <div class="container-hero">
+        <h3>Hello, I am</h3>
         <h1>Tatiana Saavedra</h1>
         <h2>Tatiana Saavedra</h2>
         <p>Software Analysis and Development Student</p>
         <button type="button" class="btn">Download cv</button>
       </div>
+      <!-- <div class="container-img"><img src="img/img1.jpg" alt="img"></div> -->
       <div class="redes">
-        <a href="#"><i class="bi bi-github"></i></a>
-        <a href="#"><i class="bi bi-linkedin"></i></a>
-        <a href="#"><i class="bi bi-whatsapp"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="https://github.com/" target="_blank"><i class="bi bi-github"></i></a>
+        <a href="https://co.linkedin.com/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.whatsapp.com/?lang=es_LA" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
       </div>
     </section>
 
     <main>
         <section id="about">
-            <div class="container-about">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h2>ABOUT ME</h2>
-                        <p>I am characterized by being a responsible, autonomous, productive, and creative person, able to perform all assigned tasks, I am persistent, and I strive to do everything in the best possible way. I have a good capacity to adapt, I am a fast learner and I enjoy learning. I am a person who knows how to organize my time, I am good at working in a team and I have a clear vision of my results and objectives.</p>
-                    </div>
-                    <div class="col-md-6">
-                        <h2>SKILLS</h2>
-                            <div>
-                                <ul>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                    <li>Lorem ipsum</li>
-                                </ul>
-                            </div>
-                    </div>
-                </div>
+          <div class="container-about">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>ABOUT ME</h2>
+                <p>I am characterized by being a responsible, autonomous, productive, and creative person, able to perform all assigned tasks, I am persistent, and I strive to do everything in the best possible way. I have a good capacity to adapt, I am a fast learner and I enjoy learning. I am a person who knows how to organize my time, I am good at working in a team and I have a clear vision of my results and objectives.</p>
+              </div>
             </div>
+          </div>
+          <div class="container-skills">
+            <div class="row">
+              <div class="col-lg-6">
+                <h2>SKILLS</h2>
+                <p>I am characterized by being a responsible, autonomous, productive, and creative person, able to perform all assigned tasks, I am persistent, and I strive to do everything in the best possible way. I have a good capacity to adapt, I am a fast learner and I enjoy learning. I am a person who knows how to organize my time, I am good at working in a team and I have a clear vision of my results and objectives.</p>
+              </div>
+            </div>
+          </div>
+          
         </section>
 
         <section id="education">
-            <div class="container-education">
-               <h5>2021</h5>
-               <p>Bachiller Académico con énfasis en contabilidad</p>
-               <h5>2022 - Actualidad</h5>
-               <p>Técnologo en Análisis y Desarrollo de Software</p>
-            </div>
+          <div class="container-education"></div>
+            <h2>EDUCATION</h2>
+
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Bachiller Académico con énfasis en contabilidad
+                        </button>
+                      </h2>
+                      <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>2021<br> Colegio Alafás del Norte<br></strong><hr>It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                          Técnologo en Análisis y Desarrollo de Software
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                          <strong>2022 - Actualidad<br> Servicio Nacional de Aprendizaje<br></strong><hr> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                        </div>
+                      </div>
+                    </div>
+
+                      </div>
+                    </div>
+                  </div>
+
         </section>
 
         <section id="projects">
             <div class="container-projects">
-               <h5>Proyecto  1</h5>
+              <h2>PROJECTS</h2>
+               <h5>Proyecto  1</h5><br>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
-               <h5>Proyecto 2</h5>
+               <h5>Proyecto 2</h5><br>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
-               <h5>Proyecto 3</h5>
+               <h5>Proyecto 3</h5><br>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
-               <h5>Proyecto 4</h5>
+               <h5>Proyecto 4</h5><br>
                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
             </div>
         </section>
 
-        <section id="experience">
-          <div class="container-experience">
+      <section id="experience">
+        <div class="container">
+            <h2>EXPERIENCE</h2>
             <div class="row">
+                <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
+                    <img src="#" class="icon"><i class="bi bi-display"></i></img>
+                    <h3>Web Development</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <a href="" class="btn btn-primary-p">Read more</a>
+                </div>
 
-              <div class="col-lg-4 col-md-6">
-                  <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Experiencia 1</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    </div>
-                  </div>
-              <div class="col-lg-4 col-md-6">
-                  <div class="card" style="width: 18rem;">
-                    <img src="..." class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Experiencia 1</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
-              <div class="col-lg-4 col-md-6">
-                  <div class="card" style="width: 18rem;">
-                    <img src="img/" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Experiencia 1</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      </div>
-                    </div>
+                <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
+                    <!-- <img src="img/cuad2.jpg" class="w-100" alt=""> -->
+                    <img src="#" class="icon"><i class="bi bi-window-stack"></i></img>
+                    <h3>Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <a href="#" class="btn btn-primary-p">Read more</a>
+                </div>
 
-      </section>
+                <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
+                    <img src="" class="icon"><i class="bi bi-handbag"></i> </img>
+                    <h3>Product Design</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <a href="#" class="btn btn-primary-p">Read more</a>
+                </div>
+
+                <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
+                    <img src="#" class="icon"><i class="bi bi-graph-up"></i></img>
+                    <h3>Branding</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <a href="#" class="btn btn-primary-p">Read more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
     </main>
 
     <footer>
@@ -130,5 +167,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
-</body>
+    <script src="js/main.js"></script>
+  </body>
 </html> 
