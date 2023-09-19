@@ -51,28 +51,43 @@
 
     <main>
         <section id="about">
-          <div class="container-about">
-            <div class="row">
-              <div class="col-lg-6">
-                <h2 data-aos="fade-right">ABOUT ME</h2>
+              <div class="col-lg-6 about2" data-aos="fade-right">
+                <h2>ABOUT ME</h2>
                 <p>I am characterized by being a responsible, autonomous, productive, and creative person, able to perform all assigned tasks, I am persistent, and I strive to do everything in the best possible way. I have a good capacity to adapt, I am a fast learner and I enjoy learning. I am a person who knows how to organize my time, I am good at working in a team and I have a clear vision of my results and objectives.</p>
               </div>
             </div>
           </div>
-          <div class="container-skills">
-            <div class="row">
-              <div class="col-lg-6">
-                <h2 data-aos="fade-left">SKILLS</h2>
-                <p>I am characterized by being a responsible, autonomous, productive, and creative person, able to perform all assigned tasks, I am persistent, and I strive to do everything in the best possible way. I have a good capacity to adapt, I am a fast learner and I enjoy learning. I am a person who knows how to organize my time, I am good at working in a team and I have a clear vision of my results and objectives.</p>
+          <div class="col-lg-6 skills" data-aos="fade-left">                
+            <h2>SKILLS</h2>
+            <div class="row ">
+              <div class="col-lg-4 ">
+                <div class=" progreso">
+                  <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65"></div>                   
+                </div> 
+                <h4>HTML</h4> 
+              </div>
+              <div class="col-lg-4">
+                <div class=" progreso">
+                  <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65"></div>                   
+                </div>
+                <h4>CSS</h4>
+              </div>
+              <div class="col-lg-4">
+                <div class=" progreso">
+                  <div role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="--value:65"></div>                                            
+                </div>
+                <h4>JS</h4>
               </div>
             </div>
+
+
+            </div>
           </div>
-          
         </section>
 
         <section id="education">
           <div class="container-education"></div>
-            <h2 data-aos="fade-right">EDUCATION</h2>
+            <h2 class="title"  data-aos="fade-right">EDUCATION</h2>
 
                   <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
@@ -107,16 +122,46 @@
         </section>
 
         <section id="projects">
-            <div class="container-projects" >
-              <h2 data-aos="fade-left">PROJECTS</h2>
-               <h5>Proyecto  1</h5><br>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
-               <h5>Proyecto 2</h5><br>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
-               <h5>Proyecto 3</h5><br>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
-               <h5>Proyecto 4</h5><br>
-               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni, dolorum? Rerum odit facilis quibusdam at.</p>
+            <div class="container projects" data-aos="fade-left">
+              <h2>PROJECTS</h2>
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/Petpalace.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>PetPalace</h5>
+                      <p>Some representative placeholder content for the first slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Rumbo.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Rumbo</h5>
+                      <p>Some representative placeholder content for the second slide.</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/Bootstrap.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Bootstrap</h5>
+                      <p>Some representative placeholder content for the third slide.</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
             </div>
         </section>
 
@@ -127,7 +172,7 @@
                 <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
                     <img src="#" class="icon"><i class="bi bi-display"></i></img>
                     <h3>Web Development</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <p>I have had the opportunity to work on various projects ranging from creating static websites to dynamic web applications.</p>
                     <a href="" class="btn btn-primary-p">Read more</a>
                 </div>
 
@@ -135,21 +180,21 @@
                     <!-- <img src="img/cuad2.jpg" class="w-100" alt=""> -->
                     <img src="#" class="icon"><i class="bi bi-window-stack"></i></img>
                     <h3>Web Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <p>I have had the opportunity to combine creativity and functionality to create highly effective websites in terms of user experience.</p>
                     <a href="#" class="btn btn-primary-p">Read more</a>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
                     <img src="" class="icon"><i class="bi bi-handbag"></i> </img>
                     <h3>Product Design</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <p>I have worked on creating wireframes and interactive prototypes to visualize concepts, as well as iteration based on user feedback.</p>
                     <a href="#" class="btn btn-primary-p">Read more</a>
                 </div>
 
                 <div class="col-lg-3 col-md-6 col-sm-12 item-experiencia">
                     <img src="#" class="icon"><i class="bi bi-graph-up"></i></img>
                     <h3>Branding</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis dolorem totam autem aliquid ad unde ipsum temporibus sed cupiditate ipsa.</p>
+                    <p>I have had the opportunity to work in the creation and management of strong and effective brand identities for several companies and organizations.</p>
                     <a href="#" class="btn btn-primary-p">Read more</a>
                 </div>
             </div>
